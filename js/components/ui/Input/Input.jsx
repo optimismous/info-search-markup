@@ -5,6 +5,7 @@ import './Input.module.css';
  * @typedef PropType
  * @property {string} type
  * @property {string} value
+ * @property {string} placeholder
  * @property {Function} onChange
  */
 
@@ -14,8 +15,8 @@ import './Input.module.css';
  * @returns {JSX.Element}
  */
 export const Input = (props) => {
-
   return (
-    <input onChange={props.onChange} type={props.type ?? 'text'} className="Input" value={props.value}/>
+    <input onChange={props.onChange} placeholder={props.placeholder} type={props.type ?? 'text'} className="Input"
+           value={props.value}/>
   );
 };

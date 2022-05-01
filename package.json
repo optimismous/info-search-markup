@@ -8,7 +8,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "build": "parcel build index.html",
-    "dev": "parcel index.html --open",
+    "dev": "parcel index.html --no-cache",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

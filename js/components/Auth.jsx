@@ -34,10 +34,10 @@ export function Auth() {
       </div>
       <form className="Form" onSubmit={onSubmit}>
         <div className="FormField">
-          <Input value={login} placeholder="" onChange={onLoginChange} type="text"/>
+          <Input value={login} placeholder="Введите логин" onChange={onLoginChange} type="text"/>
         </div>
         <div className="FormField">
-          <Input value={password} placeholder="" onChange={onPasswordChange} type="password"/>
+          <Input value={password} placeholder="Введите пароль" onChange={onPasswordChange} type="password"/>
         </div>
         <div className="FormField">
           <Button type="submit">войти</Button>
