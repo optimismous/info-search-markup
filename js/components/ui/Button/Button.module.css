@@ -1,0 +1,12 @@
+.Button {
+  border-width: 0;
+  font-size: 22px;
+  line-height: 50px;
+  vertical-align: middle;
+  font-weight: 700;
+  color: #ffffff;
+  width: 100%;
+  height: 50px;
+  background-color: #ff3d56;
+  border-radius: 2px;
+}
