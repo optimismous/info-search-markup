@@ -1,4 +1,5 @@
 .Button {
+  cursor: pointer;
   border-width: 0;
   font-size: 22px;
   line-height: 50px;

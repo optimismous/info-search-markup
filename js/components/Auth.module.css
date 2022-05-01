@@ -28,8 +28,11 @@ html, body {
   border-radius: 2px;
 }
 
-.AuthFormHeader {
+.AuthFormHeaderWrap {
   color: #45484e;
+}
+
+.AuthFormHeader {
   font-size: 24px;
 }
 

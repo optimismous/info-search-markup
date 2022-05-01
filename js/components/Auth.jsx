@@ -3,6 +3,7 @@ import "./Auth.module.css";
 import "./Form.css";
 import {Button} from "./ui/Button/Button";
 import {Input} from "./ui/Input/Input";
+import {DolphinIcon} from "./ui/Icons/DolphinIcon";
 
 export function Auth() {
   const [login, setLogin] = useState('');
@@ -25,8 +26,12 @@ export function Auth() {
   return <div className="authContainer">
     <div className="authForm">
       <div className="Logo"/>
-      <h1 className="AuthFormHeader">Информационно-поисковая система</h1>
-      Дельфин-онлайн
+      <div className="AuthFormHeaderWrap">
+        <h1 className="AuthFormHeader">Информационно-поисковая система</h1>
+        <div className="FormField">
+          <DolphinIcon style={{marginRight: 8}}/> Дельфин - онлайн
+        </div>
+      </div>
       <form className="Form" onSubmit={onSubmit}>
         <div className="FormField">
           <Input value={login} placeholder="" onChange={onLoginChange} type="text"/>
