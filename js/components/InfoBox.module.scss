@@ -1,0 +1,57 @@
+.InfoBox {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 40px 25px 25px;
+  background-color: white;
+  box-shadow: 0 0 16px 0 rgba(60, 60, 60, 0.07);
+  border-radius: 2px;
+  min-height: 190px;
+}
+
+.InfoBoxTitle {
+  flex-grow: initial;
+  font-weight: bold;
+  font-size: 22px;
+  color: #45484e;
+  margin: 0 0 10px;
+}
+
+.InfoBoxDescription {
+  color: #888;
+  flex: 1;
+}
+
+.InfoBoxFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.InfoBoxAccess {
+  color: #ff3d56;
+
+  &._green {
+    color: #07930a;
+  }
+}
+
+.InfoBoxAccessCircle {
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  border: 1px dashed #ff3d56;
+  color: #ff3d56;
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+
+  &._green {
+    border-color: #07930a;
+  }
+}
+
+.InfoBoxDate {
+  font-size: 16px;
+}

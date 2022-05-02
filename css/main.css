@@ -24,6 +24,15 @@ html {
   color: #888888;
 }
 
+a {
+  text-decoration: none;
+  color: #888;
+}
+
+a:hover {
+  color: #181818;
+}
+
 
 /*
  * Remove text-shadow in selection highlight:

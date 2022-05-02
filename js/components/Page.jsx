@@ -2,6 +2,7 @@ import React from "react";
 import "./Page.module.css";
 import { Logo } from "./ui/Logo/Logo";
 import { Menu } from "./Menu";
+import { PrivateCabinet } from "./PrivateCabinet";
 
 const sidebarMenuItems = [
   {
@@ -39,6 +40,7 @@ const topMenuItems = [
  * @returns {JSX.Element}
  * @constructor
  */
+
 export function Page() {
   return (
     <div className="page">
@@ -50,7 +52,9 @@ export function Page() {
         <div className="pageTopMenu">
           <Menu items={topMenuItems} kind="horizontal" />
         </div>
-        <div className="pageContent"></div>
+        <div className="pageContent">
+          <PrivateCabinet />
+        </div>
       </div>
     </div>
   );

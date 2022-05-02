@@ -1,0 +1,19 @@
+.personalInfo {
+  padding-left: 60px;
+  margin-bottom: 30px;
+}
+
+.personalInfoContact {
+  margin-top: 10px;
+}
+
+.pageContent {
+  color: #181818;
+}
+
+.modulesList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 25px;
+}
