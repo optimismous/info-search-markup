@@ -1,9 +1,6 @@
 import React from "react";
-// import ReactDOM from "react-dom";
 import { App } from "./App";
-import { createRoot } from 'react-dom/client';
-const container = document.getElementById('app');
-// eslint-disable-next-line no-console
-console.log('666001 container', container);
-const root = createRoot(container); // createRoot(container!) if you use TypeScript
+import { createRoot } from "react-dom/client";
+const container = document.getElementById("app");
+const root = createRoot(container);
 root.render(<App tab="home" />);

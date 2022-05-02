@@ -1,0 +1,27 @@
+.page {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+  min-height: 100%;
+}
+
+.pageSidebar {
+  border-right: 1px solid #eaedf0;
+  background-color: #fff;
+  padding: 25px;
+  width: 300px;
+}
+
+.pageMain {
+  flex: 1;
+}
+
+.pageTopMenu {
+  background-color: white;
+  height: 80px;
+  border-bottom: 1px solid #eaedf0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}

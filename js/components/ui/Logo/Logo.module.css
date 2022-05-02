@@ -1,0 +1,16 @@
+.Logo {
+  background: url('./img/logo.png') top left no-repeat;
+  margin: 0 auto;
+}
+
+.Logo._big {
+  background-size: 186px 205px;
+  width: 186px;
+  height: 205px;
+}
+
+.Logo._middle {
+  background-size: 119px 131px;
+  width: 119px;
+  height: 131px;
+}

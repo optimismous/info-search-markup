@@ -1,9 +1,9 @@
 import React, {useCallback, useState} from "react";
 import "./Auth.module.css";
-import "./Form.css";
 import {Button} from "./ui/Button/Button";
 import {Input} from "./ui/Input/Input";
 import {DolphinIcon} from "./ui/Icons/DolphinIcon";
+import {Logo} from "./ui/Logo/Logo";
 
 export function Auth() {
   const [login, setLogin] = useState('');
@@ -25,7 +25,7 @@ export function Auth() {
 
   return <div className="authContainer">
     <div className="authForm">
-      <div className="Logo"/>
+      <Logo type="big"/>
       <div className="AuthFormHeaderWrap">
         <h1 className="AuthFormHeader">Информационно-поисковая система</h1>
         <div className="FormField">

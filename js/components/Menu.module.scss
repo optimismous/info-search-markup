@@ -1,0 +1,38 @@
+.menu {
+  font-weight: bold;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  &._horizontal {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.menuItem {
+  margin-top: 40px;
+
+  .menu._horizontal & {
+    margin-top: 0;
+    padding: 0 25px;
+    border-left: 1px solid #eaedf0;
+
+    &:first-child {
+      border-left-width: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #888888;
+  }
+
+  &._selected a {
+    color: #ff3d56;
+  }
+}
+
+.menuItemText {
+  margin-left: 4px;
+}

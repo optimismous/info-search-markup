@@ -1,11 +1,11 @@
 {
-  "name": " ",
+  "name": "Dolphin Info Search",
   "version": "0.0.1",
   "description": "",
-  "keywords": "",
+  "keywords": ["react"],
   "license": "",
   "author": "",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "browserslist": ["defaults"],
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --no-cache",
@@ -17,6 +17,7 @@
     "parcel-bundler": "^1.12.4",
     "postcss": "^8.4.12",
     "postcss-modules": "^4.3.1",
+    "prettier": "^2.6.2",
     "sass": "^1.50.1"
   },
   "dependencies": {
