@@ -4,6 +4,10 @@
   padding-left: 0;
   margin: 0;
 
+  &._vertical {
+    flex: 1;
+  }
+
   &._horizontal {
     display: flex;
     justify-content: end;
@@ -11,7 +15,7 @@
 }
 
 .menuItem {
-  margin-top: 40px;
+  margin-top: 45px;
 
   .menu._horizontal & {
     margin-top: 0;

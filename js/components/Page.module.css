@@ -1,4 +1,4 @@
-.page {
+.Page {
   display: flex;
   flex-wrap: nowrap;
   align-items: stretch;
@@ -6,18 +6,20 @@
   min-height: 100%;
 }
 
-.pageSidebar {
+.PageSidebar {
+  display: flex;
+  flex-direction: column;
   border-right: 1px solid #eaedf0;
   background-color: #fff;
   padding: 25px;
   width: 300px;
 }
 
-.pageMain {
+.PageMain {
   flex: 1;
 }
 
-.pageTopMenu {
+.PageTopMenu {
   background-color: white;
   height: 80px;
   border-bottom: 1px solid #eaedf0;
@@ -26,6 +28,6 @@
   justify-content: end;
 }
 
-.pageContent {
+.PageContent {
   padding: 25px;
 }

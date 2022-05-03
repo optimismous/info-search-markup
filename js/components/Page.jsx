@@ -43,16 +43,19 @@ const topMenuItems = [
 
 export function Page() {
   return (
-    <div className="page">
-      <div className="pageSidebar">
+    <div className="Page">
+      <div className="PageSidebar">
         <Logo style={{ position: "relative", left: "-13px" }} />
         <Menu items={sidebarMenuItems} kind="vertical" />
+        <div className="CopyrightText AdditionalInfoText">
+          &#169; Дельфин-онлайн, 2022
+        </div>
       </div>
-      <div className="pageMain">
-        <div className="pageTopMenu">
+      <div className="PageMain">
+        <div className="PageTopMenu">
           <Menu items={topMenuItems} kind="horizontal" />
         </div>
-        <div className="pageContent">
+        <div className="PageContent">
           <PrivateCabinet />
         </div>
       </div>
