@@ -1,8 +1,13 @@
 .Input {
   box-sizing: border-box;
   width: 100%;
-  height: 60px;
-  padding: 20px;
+  height: 38px;
+  padding: 0 20px 0;
   border: 1px solid #d5dadf;
   border-radius: 2px;
+
+  &._big {
+    height: 60px;
+    padding: 20px;
+  }
 }

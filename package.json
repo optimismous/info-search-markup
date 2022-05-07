@@ -1,11 +1,15 @@
 {
-  "name": "",
+  "name": "dolphin-markup",
   "version": "0.0.1",
   "description": "",
-  "keywords": ["react"],
+  "keywords": [
+    "react"
+  ],
   "license": "",
   "author": "",
-  "browserslist": ["defaults"],
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --no-cache",
@@ -23,6 +27,7 @@
   "dependencies": {
     "js": "^0.1.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-select": "^5.3.1"
   }
 }

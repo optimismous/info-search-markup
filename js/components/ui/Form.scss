@@ -1,0 +1,19 @@
+.Form {
+  display: grid;
+  grid-template-columns: 370px;
+}
+
+.FormFieldSet {
+  padding: 20px 0;
+
+}
+
+.FormFieldSet + .FormFieldSet {
+  border-top: 1px solid #d5dadf;
+}
+
+.FormFooter {
+  display: inline-grid;
+  grid-template-columns: 200px;
+  gap: 20px;
+}

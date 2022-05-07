@@ -1,12 +1,13 @@
-import React from 'react';
-import './Input.module.css';
+import React from "react";
+import "./Input.module.scss";
 
 /**
  * @typedef PropType
  * @property {string} type
  * @property {string} value
  * @property {string} placeholder
- * @property {Function} onChange
+ * @property {'big'} size?
+ * @callback onChange
  */
 
 /**
@@ -16,7 +17,12 @@ import './Input.module.css';
  */
 export const Input = (props) => {
   return (
-    <input onChange={props.onChange} placeholder={props.placeholder} type={props.type ?? 'text'} className="Input"
-           value={props.value}/>
+    <input
+      onChange={props.onChange}
+      placeholder={props.placeholder}
+      type={props.type ?? "text"}
+      className={`Input${props.size === "big" ? " _big" : ""}`}
+      value={props.value}
+    />
   );
 };

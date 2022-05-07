@@ -3,6 +3,7 @@ import "./Page.module.css";
 import { Logo } from "./ui/Logo/Logo";
 import { Menu } from "./Menu";
 import { PrivateCabinet } from "./PrivateCabinet";
+import { Rfpi } from "./Rfpi";
 
 const sidebarMenuItems = [
   {
@@ -56,7 +57,7 @@ export function Page() {
           <Menu items={topMenuItems} kind="horizontal" />
         </div>
         <div className="PageContent">
-          <PrivateCabinet />
+          <Rfpi />
         </div>
       </div>
     </div>
