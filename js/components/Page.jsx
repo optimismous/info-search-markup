@@ -4,6 +4,7 @@ import { Logo } from "./ui/Logo/Logo";
 import { Menu } from "./Menu";
 import { PrivateCabinet } from "./PrivateCabinet";
 import { Rfpi } from "./Rfpi";
+import { SbsDetails } from "./SbsDetails";
 
 const sidebarMenuItems = [
   {
@@ -57,7 +58,9 @@ export function Page() {
           <Menu items={topMenuItems} kind="horizontal" />
         </div>
         <div className="PageContent">
-          <Rfpi />
+          {/*<Rfpi />*/}
+          {/*<PrivateCabinet />*/}
+          <SbsDetails />
         </div>
       </div>
     </div>
