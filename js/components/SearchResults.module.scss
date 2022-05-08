@@ -1,0 +1,12 @@
+.SearchResults {
+}
+
+.SearchResultsHeader {
+  margin-bottom: 25px;
+}
+
+.SearchResultsItems {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr;
+}

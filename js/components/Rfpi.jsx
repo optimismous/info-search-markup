@@ -1,10 +1,12 @@
 import React, { useCallback, useState } from "react";
 import "./Rfpi.module.scss";
 import "./ui/Form.scss";
-import { MainTitle } from "./ui/MainTitle/MainTitle";
+import { MainTitle } from "./ui/Typography/Typography";
 import Select from "react-select";
 import { Button } from "./ui/Button/Button";
 import { Input } from "./ui/Input/Input";
+import { ResultBox } from "./ui/ResultBox/ResultBox";
+import { SearchResults } from "./SearchResults";
 
 const options = [
   { value: "organization", label: "Организация" },
@@ -23,16 +25,11 @@ const options = [
  */
 
 export const Rfpi = (props) => {
-  const [selectedOption, setSelectedOption] = useState("fio");
+  const [selectedOption, setSelectedOption] = useState(options?.[0] ?? null);
 
-  const onSubmit = useCallback(
-    (e) => {
-      e.preventDefault();
-      // eslint-disable-next-line no-console
-      console.log("666001 formValue", e);
-    },
-    [setSelectedOption]
-  );
+  const onSubmit = useCallback((e) => {
+    e.preventDefault();
+  }, []);
 
   return (
     <div>
@@ -52,6 +49,13 @@ export const Rfpi = (props) => {
           <Button type="submit">найти</Button>
         </footer>
       </form>
+      <SearchResults>
+        <>
+          {[1, 2, 3, 4, 5, 6].map(() => (
+            <ResultBox />
+          ))}
+        </>
+      </SearchResults>
     </div>
   );
 };

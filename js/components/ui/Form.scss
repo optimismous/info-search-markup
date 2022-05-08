@@ -1,11 +1,12 @@
 .Form {
-  display: grid;
-  grid-template-columns: 370px;
+  border-bottom: 1px solid #d5dadf;
+  margin-bottom: 40px;
 }
 
 .FormFieldSet {
+  display: grid;
+  grid-template-columns: 370px;
   padding: 20px 0;
-
 }
 
 .FormFieldSet + .FormFieldSet {
@@ -16,4 +17,5 @@
   display: inline-grid;
   grid-template-columns: 200px;
   gap: 20px;
+  padding-bottom: 20px;
 }

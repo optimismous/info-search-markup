@@ -27,7 +27,7 @@ export const InfoBox = ({ item = {} }) => {
       <h3 className="InfoBoxTitle">{item.name}</h3>
       <div className="InfoBoxDescription">{item.description}</div>
       <div className="InfoBoxFooter">
-        <div className={`InfoBoxAccess ${item.hasAccess ? " _green" : ""}`}>
+        <div className={`InfoBoxAccess${item.hasAccess ? " _green" : ""}`}>
           <span
             className={`InfoBoxAccessCircle ${item.hasAccess ? " _green" : ""}`}
           />
