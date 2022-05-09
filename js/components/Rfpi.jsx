@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
 import "./Rfpi.module.scss";
 import "./ui/Form.scss";
-import { MainTitle } from "./ui/Typography/Typography";
+import { FieldValueText, MainTitle } from "./ui/Typography/Typography";
 import Select from "react-select";
 import { Button } from "./ui/Button/Button";
 import { Input } from "./ui/Input/Input";
@@ -52,7 +52,16 @@ export const Rfpi = (props) => {
       <SearchResults>
         <>
           {[1, 2, 3, 4, 5, 6].map(() => (
-            <ResultBox />
+            <ResultBox>
+              <>
+                <FieldValueText
+                  field="Организация: "
+                  value="Национальная служба экономической разведки"
+                />
+                <FieldValueText field="ФИО: " value="Иванов Иван Иванович" />
+                <FieldValueText field="Телефон: " value="+7-157-847-0256" />
+              </>
+            </ResultBox>
           ))}
         </>
       </SearchResults>

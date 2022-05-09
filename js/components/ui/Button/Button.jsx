@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
 import "./Button.module.css";
 
 /**
  * @typedef PropType
  * @property {string} type
+ * @property {string} backgroundColor
  * @property {JSX.Element | text} children
  * @property {Function} onClick
  */
@@ -14,8 +15,19 @@ import "./Button.module.css";
  * @returns {JSX.Element}
  */
 export const Button = (props) => {
-  const onClick = props.onClick ?? (() => { });
+  const onClick = props.onClick ?? (() => {});
+  const style = props.backgroundColor
+    ? { backgroundColor: props.backgroundColor }
+    : {};
+
   return (
-    <button type={props.type ?? 'button'} onClick={onClick} className="Button">{props.children}</button>
+    <button
+      style={style}
+      type={props.type ?? "button"}
+      onClick={onClick}
+      className="Button"
+    >
+      {props.children}
+    </button>
   );
 };

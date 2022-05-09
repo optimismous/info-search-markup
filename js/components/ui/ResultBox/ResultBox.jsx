@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import "./ResultBox.module.scss";
-import { FieldValueText } from "../Typography/Typography";
 
 /**
  * @typedef PropType
  * @property {JSX.Element | text} children
+ * @property {JSX.Element | text} footerItems
+ * @property {string} expandTitle
+ * @property {string} collapseTitle
  */
 
 /**
@@ -18,15 +20,48 @@ import { FieldValueText } from "../Typography/Typography";
  * @returns {JSX.Element}
  * @constructor
  */
-export const ResultBox = (props) => {
+export const ResultBox = ({
+  children,
+  footerItems = "",
+  expandTitle,
+  collapseTitle,
+}) => {
+  const [expanded, setExpanded] = useState(true);
+  const onHeaderClick = useCallback(() => {
+    setExpanded(!expanded);
+  }, [expanded, setExpanded]);
+
+  const triangleRight = <span className="triangle">►</span>;
+  const triangleDown = <span className="triangle">▼</span>;
+
+  const header = expandTitle ? (
+    <div
+      onClick={onHeaderClick}
+      className={`ResultBoxHeader${expanded ? "" : " _collapsed"}`}
+    >
+      {expanded ? (
+        <>
+          {collapseTitle}
+          {triangleDown}
+        </>
+      ) : (
+        <>
+          {expandTitle}
+          {triangleRight}
+        </>
+      )}
+    </div>
+  ) : null;
+
   return (
     <div className="ResultBox">
-      <FieldValueText
-        field="Организация: "
-        value="Национальная служба экономической разведки"
-      />
-      <FieldValueText field="ФИО: " value="Иванов Иван Иванович" />
-      <FieldValueText field="Телефон: " value="+7-157-847-0256" />
+      {header}
+      {expanded ? (
+        <div>
+          {children}
+          <div className="ResultBoxFooter">{footerItems}</div>
+        </div>
+      ) : null}
     </div>
   );
 };
