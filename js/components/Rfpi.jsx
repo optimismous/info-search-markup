@@ -15,7 +15,7 @@ const options = [
 
 /**
  * @typedef PropType
- * @property {JSX.Element | text} children
+ * @property {JSX.Element | string} children
  */
 
 /**

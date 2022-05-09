@@ -5,7 +5,7 @@ import "./Button.module.css";
  * @typedef PropType
  * @property {string} type
  * @property {string} backgroundColor
- * @property {JSX.Element | text} children
+ * @property {JSX.Element | string} children
  * @property {Function} onClick
  */
 

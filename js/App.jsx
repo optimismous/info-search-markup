@@ -6,6 +6,33 @@ import { RoutesIndex } from "./components/RoutesIndex";
 import { PrivateCabinet } from "./components/PrivateCabinet";
 import { Rfpi } from "./components/Rfpi";
 import { SbsDetails } from "./components/SbsDetails";
+import { AdditionalActionsMenu } from "./components/ui/AdditionalActionsMenu/AdditionalActionsMenu";
+import { StyledLink } from "./components/ui/Typography/Typography";
+
+const SbsDetailsElement = () => {
+  const leftElement = (
+    <>
+      <span className="BackLinkArrow">&lsaquo;</span>
+      <StyledLink to="/">Назад</StyledLink>
+    </>
+  );
+  const rightElement = (
+    <a href="#" download="download">
+      <StyledLink color="red" to="/">
+        Выгрузить в PDF
+      </StyledLink>
+    </a>
+  );
+  return (
+    <Page>
+      <AdditionalActionsMenu
+        leftElement={leftElement}
+        rightElement={rightElement}
+      />
+      <SbsDetails />
+    </Page>
+  );
+};
 
 export function App() {
   return (
@@ -21,7 +48,7 @@ export function App() {
           }
         />
         <Route
-          path="private-cabinet"
+          path="/private-cabinet"
           element={
             <Page>
               <PrivateCabinet />
@@ -29,21 +56,14 @@ export function App() {
           }
         />
         <Route
-          path="rfpi"
+          path="/rfpi"
           element={
             <Page>
               <Rfpi />
             </Page>
           }
         />
-        <Route
-          path="sbs-details"
-          element={
-            <Page>
-              <SbsDetails />
-            </Page>
-          }
-        />
+        <Route path="/sbs-details" element={<SbsDetailsElement />} />
       </Routes>
     </>
   );

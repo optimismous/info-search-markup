@@ -36,7 +36,7 @@ const topMenuItems = [
 
 /**
  * @typedef PropType
- * @property {JSX.Element | text} children
+ * @property {JSX.Element | string} children
  */
 
 /**

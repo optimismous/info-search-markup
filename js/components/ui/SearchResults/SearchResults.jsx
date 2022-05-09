@@ -4,7 +4,7 @@ import { MainTitle, SecondaryText } from "../Typography/Typography";
 
 /**
  * @typedef PropType
- * @property {JSX.Element | text} children
+ * @property {JSX.Element | string} children
  */
 
 /**

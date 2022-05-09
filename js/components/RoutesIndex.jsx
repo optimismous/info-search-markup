@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 /**
  * @typedef PropType
- * @property {JSX.Element | text} children
+ * @property {JSX.Element | string} children
  */
 
 /**

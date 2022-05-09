@@ -6,7 +6,7 @@ import { Button } from "./ui/Button/Button";
 
 /**
  * @typedef PropType
- * @property {JSX.Element | text} children
+ * @property {JSX.Element | string} children
  */
 
 /**

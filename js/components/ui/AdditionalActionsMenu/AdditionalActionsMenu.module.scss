@@ -1,0 +1,17 @@
+.AdditionalActionsMenu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.AdditionalActionsMenuLeft {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.AdditionalActionsMenuRight {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}

@@ -3,8 +3,8 @@ import "./ResultBox.module.scss";
 
 /**
  * @typedef PropType
- * @property {JSX.Element | text} children
- * @property {JSX.Element | text} footerItems
+ * @property {JSX.Element | string} children
+ * @property {JSX.Element | string} footerItems
  * @property {string} expandTitle
  * @property {string} collapseTitle
  */

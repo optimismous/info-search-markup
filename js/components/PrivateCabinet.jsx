@@ -5,7 +5,7 @@ import { InfoBox } from "./ui/InfoBox/InfoBox";
 
 /**
  * @typedef PropType
- * @property {JSX.Element | text} children
+ * @property {JSX.Element | string} children
  */
 
 /**

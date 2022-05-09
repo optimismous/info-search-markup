@@ -18,3 +18,25 @@
 .KeyValueTextKey {
   color: #888888;
 }
+
+.StyledLink {
+  text-decoration: underline;
+
+  &._blue {
+    color: #0074a6;
+  }
+
+  &._red {
+    color: #ff3d56;
+  }
+}
+
+.BackLinkArrow {
+  position: relative;
+  top: -1px;
+  font-size: 20px;
+  padding-right: 5px;
+  vertical-align: top;
+  font-weight: 700;
+  color: #0074a6;
+}
