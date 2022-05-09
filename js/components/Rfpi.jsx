@@ -6,7 +6,7 @@ import Select from "react-select";
 import { Button } from "./ui/Button/Button";
 import { Input } from "./ui/Input/Input";
 import { ResultBox } from "./ui/ResultBox/ResultBox";
-import { SearchResults } from "./SearchResults";
+import { SearchResults } from "./ui/SearchResults/SearchResults";
 
 const options = [
   { value: "organization", label: "Организация" },

@@ -1,6 +1,6 @@
 import React from "react";
 import "./SearchResults.module.scss";
-import { MainTitle, SecondaryText } from "./ui/Typography/Typography";
+import { MainTitle, SecondaryText } from "../Typography/Typography";
 
 /**
  * @typedef PropType

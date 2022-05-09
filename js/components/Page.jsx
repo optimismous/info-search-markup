@@ -1,10 +1,7 @@
 import React from "react";
 import "./Page.module.css";
 import { Logo } from "./ui/Logo/Logo";
-import { Menu } from "./Menu";
-import { PrivateCabinet } from "./PrivateCabinet";
-import { Rfpi } from "./Rfpi";
-import { SbsDetails } from "./SbsDetails";
+import { Menu } from "./ui/Menu/Menu";
 
 const sidebarMenuItems = [
   {
@@ -38,12 +35,17 @@ const topMenuItems = [
 ];
 
 /**
- *
+ * @typedef PropType
+ * @property {JSX.Element | text} children
+ */
+
+/**
+ * @param {PropType} props
  * @returns {JSX.Element}
  * @constructor
  */
 
-export function Page() {
+export function Page({ children }) {
   return (
     <div className="Page">
       <div className="PageSidebar">
@@ -57,11 +59,7 @@ export function Page() {
         <div className="PageTopMenu">
           <Menu items={topMenuItems} kind="horizontal" />
         </div>
-        <div className="PageContent">
-          {/*<Rfpi />*/}
-          {/*<PrivateCabinet />*/}
-          <SbsDetails />
-        </div>
+        <div className="PageContent">{children}</div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import "./PrivateCabinet.module.scss";
 import { Icon } from "./ui/Icons/Icon";
-import { InfoBox } from "./InfoBox";
+import { InfoBox } from "./ui/InfoBox/InfoBox";
 
 /**
  * @typedef PropType

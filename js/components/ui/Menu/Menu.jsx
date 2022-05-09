@@ -1,6 +1,6 @@
 import React from "react";
 import "./Menu.module.scss";
-import { Icon } from "./ui/Icons/Icon";
+import { Icon } from "../Icons/Icon";
 
 /**
  * @typedef MenuItem
