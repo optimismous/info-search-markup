@@ -102,6 +102,47 @@ export const SbsDetails = (props) => {
           <FieldValueText field="Телефон: " value="+7-157-847-0256" />
         </>
       </ResultBox>
+      <ResultBox expandTitle="Показать запросы" collapseTitle="Скрыть запросы">
+        <>
+          <table className="RequestsTable" cellPadding="0" cellSpacing="0">
+            <tr>
+              <th>Дата</th>
+              <th>ФИО</th>
+              <th>Организация</th>
+            </tr>
+            <tr>
+              <td>01.01.2020</td>
+              <td>Иванов Иван Иванович</td>
+              <td>ООО «Озёрки»</td>
+            </tr>
+            <tr>
+              <td>01.01.2020</td>
+              <td>Иванов Иван Иванович</td>
+              <td>ООО «Озёрки»</td>
+            </tr>
+            <tr>
+              <td>01.01.2020</td>
+              <td>Иванов Иван Иванович</td>
+              <td>ООО «Озёрки»</td>
+            </tr>
+            <tr>
+              <td>01.01.2020</td>
+              <td>Иванов Иван Иванович</td>
+              <td>ООО «Озёрки»</td>
+            </tr>
+            <tr>
+              <td>01.01.2020</td>
+              <td>Иванов Иван Иванович</td>
+              <td>ООО «Озёрки»</td>
+            </tr>
+            <tr>
+              <td>01.01.2020</td>
+              <td>Иванов Иван Иванович</td>
+              <td>ООО «Озёрки»</td>
+            </tr>
+          </table>
+        </>
+      </ResultBox>
     </div>
   );
 };

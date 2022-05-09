@@ -3,3 +3,27 @@
   flex-direction: column;
   gap: 10px;
 }
+
+.RequestsTable {
+  width: 100%;
+
+  th {
+    color: #888888;
+    text-align: left;
+    font-weight: normal;
+  }
+
+  td, th {
+    &:first-child {
+      padding: 10px 0 10px 30px;
+    }
+
+    &:last-child {
+      padding: 10px 30px 10px 0;
+    }
+  }
+
+  tr:nth-child( even ) {
+    background-color: #f3f8f9;
+  }
+}
