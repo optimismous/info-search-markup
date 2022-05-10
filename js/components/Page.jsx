@@ -1,5 +1,5 @@
 import React from "react";
-import "./Page.module.css";
+import "./Page.module.scss";
 import { Logo } from "./ui/Logo/Logo";
 import { Menu } from "./ui/Menu/Menu";
 
@@ -57,6 +57,9 @@ export function Page({ children }) {
       </div>
       <div className="PageMain">
         <div className="PageTopMenu">
+          <div className="PageTitle">
+            СБС <span className="triangle">►</span>
+          </div>
           <Menu items={topMenuItems} kind="horizontal" />
         </div>
         <div className="PageContent">{children}</div>

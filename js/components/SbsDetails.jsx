@@ -5,13 +5,13 @@ import { FieldValueText } from "./ui/Typography/Typography";
 import { Button } from "./ui/Button/Button";
 
 /**
- * @typedef PropType
+ * @typedef SbsDetailsPropsType
  * @property {JSX.Element | string} children
  */
 
 /**
  *
- * @param {PropType} props
+ * @param {SbsDetailsPropsType} props
  * @returns {JSX.Element}
  */
 
