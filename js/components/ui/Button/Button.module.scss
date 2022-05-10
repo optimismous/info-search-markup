@@ -10,4 +10,13 @@
   height: 50px;
   background-color: #ff3d56;
   border-radius: 2px;
+
+  &._addToList {
+      font-size: 18px;
+      width: auto;
+      background-color: #57a7b2;
+      font-weight: normal;
+      padding-left: 20px;
+      padding-right: 20px;
+   }
 }

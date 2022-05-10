@@ -1,10 +1,10 @@
 import React from "react";
-import "./Button.module.css";
+import "./Button.module.scss";
 
 /**
  * @typedef PropType
  * @property {string} type
- * @property {string} backgroundColor
+ * @property {string} additionalCssClass
  * @property {JSX.Element | string} children
  * @property {Function} onClick
  */
@@ -22,10 +22,11 @@ export const Button = (props) => {
 
   return (
     <button
-      style={style}
       type={props.type ?? "button"}
       onClick={onClick}
-      className="Button"
+      className={`Button${
+        props.additionalCssClass ? ` ${props.additionalCssClass}` : ""
+      }`}
     >
       {props.children}
     </button>

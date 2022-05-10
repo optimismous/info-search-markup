@@ -20,7 +20,9 @@ export const SbsDetails = (props) => {
     <div className="BoxesList">
       <ResultBox
         footerItems={
-          <Button backgroundColor="#57a7b2">Добавить в сторожевой лист</Button>
+          <Button additionalCssClass="_addToList">
+            Добавить в сторожевой лист
+          </Button>
         }
       >
         <>
