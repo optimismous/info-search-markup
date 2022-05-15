@@ -25,8 +25,11 @@ import { Icon } from "../Icons/Icon";
 export const Menu = ({ items = [], kind = "vertical" }) => {
   return (
     <ul className={`menu _${kind}`}>
-      {items.map(({ icon, text, selected }) => (
-        <li className={`menuItem${selected ? " _selected" : ""}`}>
+      {items.map(({ icon, text, selected }, idx) => (
+        <li
+          key={`menu_${kind}_${idx}`}
+          className={`menuItem${selected ? " _selected" : ""}`}
+        >
           <a href="#">
             <Icon type={icon} />
             <span className="menuItemText">{text}</span>

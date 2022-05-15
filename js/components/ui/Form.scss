@@ -1,16 +1,29 @@
 .Form {
   border-bottom: 1px solid #d5dadf;
   margin-bottom: 40px;
+
+  hr {
+    margin: 0;
+    height: 1px;
+    border-top: none;
+    border-top: 1px solid #d5dadf;
+  }
 }
 
 .FormFieldSet {
   display: grid;
-  grid-template-columns: 370px;
-  padding: 20px 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin: 20px 0;
+
+  &._wide {
+    grid-template-columns: 1fr;
+  }
 }
 
-.FormFieldSet + .FormFieldSet {
-  border-top: 1px solid #d5dadf;
+.FormTextarea {
+  padding: 10px;
 }
 
 .FormFooter {

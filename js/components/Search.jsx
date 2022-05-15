@@ -1,5 +1,4 @@
 import React, { useCallback, useState } from "react";
-import "./Rfpi.module.scss";
 import "./ui/Form.scss";
 import { FieldValueText, MainTitle } from "./ui/Typography/Typography";
 import Select from "react-select";
@@ -13,18 +12,34 @@ const options = [
   { value: "fio", label: "ФИО" },
 ];
 
+const SearchByFioFields = () => {
+  return (
+    <>
+      <fieldset className="FormFieldSet">
+        <Input placeholder="Фамилия" required={true} />
+        <Input placeholder="Имя" required={true} />
+        <Input placeholder="Отчество" required={true} />
+        <Input placeholder="Дата рождения" required={true} />
+      </fieldset>
+      <fieldset className="FormFieldSet _wide">
+        <textarea className="FormTextarea" placeholder="Причина запроса" />
+      </fieldset>
+    </>
+  );
+};
+
 /**
- * @typedef PropType
+ * @typedef SearchPropsType
  * @property {JSX.Element | string} children
  */
 
 /**
  *
- * @param {PropType} props
+ * @param {SearchPropsType} props
  * @returns {JSX.Element}
  */
 
-export const Rfpi = (props) => {
+export const Search = (props) => {
   const [selectedOption, setSelectedOption] = useState(options?.[0] ?? null);
 
   const onSubmit = useCallback((e) => {
@@ -42,9 +57,16 @@ export const Rfpi = (props) => {
             options={options}
           />
         </fieldset>
-        <fieldset className="FormFieldSet">
-          <Input placeholder="Название" />
-        </fieldset>
+        {selectedOption.value === "fio" ? (
+          <>
+            <hr />
+            <SearchByFioFields />
+          </>
+        ) : (
+          <fieldset className="FormFieldSet">
+            <Input placeholder="Название" />
+          </fieldset>
+        )}
         <footer className="FormFooter">
           <Button type="submit">найти</Button>
         </footer>

@@ -5,9 +5,13 @@ import { Menu } from "./ui/Menu/Menu";
 
 const sidebarMenuItems = [
   {
+    icon: "search",
+    text: "Поиск",
+    selected: true,
+  },
+  {
     icon: "person",
     text: "Личный кабинет",
-    selected: true,
   },
   {
     icon: "talk",

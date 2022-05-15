@@ -4,10 +4,10 @@ import { Page } from "./components/Page";
 import { Route, Routes } from "react-router-dom";
 import { RoutesIndex } from "./components/RoutesIndex";
 import { PrivateCabinet } from "./components/PrivateCabinet";
-import { Rfpi } from "./components/Rfpi";
 import { SbsDetails } from "./components/SbsDetails";
 import { AdditionalActionsMenu } from "./components/ui/AdditionalActionsMenu/AdditionalActionsMenu";
 import { StyledLink } from "./components/ui/Typography/Typography";
+import { Search } from "./components/Search";
 
 const SbsDetailsElement = () => {
   const leftElement = (
@@ -56,10 +56,10 @@ export function App() {
           }
         />
         <Route
-          path="/rfpi"
+          path="/search"
           element={
             <Page>
-              <Rfpi />
+              <Search />
             </Page>
           }
         />

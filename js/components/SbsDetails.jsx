@@ -14,7 +14,6 @@ import { Button } from "./ui/Button/Button";
  * @param {SbsDetailsPropsType} props
  * @returns {JSX.Element}
  */
-
 export const SbsDetails = (props) => {
   return (
     <div className="BoxesList">

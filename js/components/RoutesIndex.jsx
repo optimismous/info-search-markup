@@ -21,7 +21,7 @@ export const RoutesIndex = (props) => {
         <Link to="/private-cabinet">Личный кабинет</Link>
       </div>
       <div>
-        <Link to="/rfpi">РФПИ</Link>
+        <Link to="/search">Поиск</Link>
       </div>
       <div>
         <Link to="/sbs-details">CБС подробнее</Link>
