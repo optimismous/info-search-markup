@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 /**
- * @typedef PropType
+ * @typedef RoutesIndexPropsType
  * @property {JSX.Element | string} children
  */
 
 /**
  *
- * @param {PropType} props
+ * @param {RoutesIndexPropsType} props
  * @returns {JSX.Element}
  */
 export const RoutesIndex = (props) => {

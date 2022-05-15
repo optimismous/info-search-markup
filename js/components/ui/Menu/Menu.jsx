@@ -1,11 +1,13 @@
 import React from "react";
 import "./Menu.module.scss";
 import { Icon } from "../Icons/Icon";
+import { Link } from "react-router-dom";
 
 /**
  * @typedef MenuItem
  * @property {string} text
  * @property {string} icon
+ * @property {string} route
  * @property {boolean} selected?
  *
  */
@@ -25,15 +27,15 @@ import { Icon } from "../Icons/Icon";
 export const Menu = ({ items = [], kind = "vertical" }) => {
   return (
     <ul className={`menu _${kind}`}>
-      {items.map(({ icon, text, selected }, idx) => (
+      {items.map(({ icon, text, selected, route = "/" }, idx) => (
         <li
           key={`menu_${kind}_${idx}`}
           className={`menuItem${selected ? " _selected" : ""}`}
         >
-          <a href="#">
+          <Link to={route}>
             <Icon type={icon} />
             <span className="menuItemText">{text}</span>
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

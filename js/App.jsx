@@ -8,6 +8,9 @@ import { SbsDetails } from "./components/SbsDetails";
 import { AdditionalActionsMenu } from "./components/ui/AdditionalActionsMenu/AdditionalActionsMenu";
 import { StyledLink } from "./components/ui/Typography/Typography";
 import { Search } from "./components/Search";
+import { Support } from "./components/Support";
+import { Users } from "./components/Users";
+import { WatchList } from "./components/WarchList";
 
 const SbsDetailsElement = () => {
   const leftElement = (
@@ -64,6 +67,30 @@ export function App() {
           }
         />
         <Route path="/sbs-details" element={<SbsDetailsElement />} />
+        <Route
+          path="/support"
+          element={
+            <Page>
+              <Support />
+            </Page>
+          }
+        />
+        <Route
+          path="/users"
+          element={
+            <Page>
+              <Users />
+            </Page>
+          }
+        />
+        <Route
+          path="/watch-list"
+          element={
+            <Page>
+              <WatchList />
+            </Page>
+          }
+        />
       </Routes>
     </>
   );

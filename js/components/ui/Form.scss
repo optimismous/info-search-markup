@@ -1,5 +1,4 @@
 .Form {
-  border-bottom: 1px solid #d5dadf;
   margin-bottom: 40px;
 
   hr {
@@ -23,6 +22,8 @@
 }
 
 .FormTextarea {
+  box-sizing: border-box;
+  min-height: 140px;
   padding: 10px;
 }
 

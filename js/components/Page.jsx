@@ -7,22 +7,27 @@ const sidebarMenuItems = [
   {
     icon: "search",
     text: "Поиск",
+    route: "/search",
     selected: true,
   },
   {
     icon: "person",
+    route: "/private-cabinet",
     text: "Личный кабинет",
   },
   {
     icon: "talk",
+    route: "/support",
     text: "Написать в техподдержку",
   },
   {
     icon: "book",
+    route: "/users",
     text: "Справочник пользователей",
   },
   {
     icon: "shield",
+    route: "/watch-list",
     text: "Сторожевой лист",
   },
 ];
@@ -30,6 +35,7 @@ const sidebarMenuItems = [
 const topMenuItems = [
   {
     icon: "person",
+    route: "/private-cabinet",
     text: "Личный кабинет",
   },
   {
