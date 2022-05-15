@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import "./ResultBox.module.scss";
 
 /**
- * @typedef PropType
+ * @typedef ResultBoxPropsType
  * @property {JSX.Element | string} children
  * @property {JSX.Element | string} footerItems
  * @property {string} expandTitle
@@ -11,7 +11,7 @@ import "./ResultBox.module.scss";
 
 /**
  *
- * @param {PropType} props
+ * @param {ResultBoxPropsType} props
  * @returns {JSX.Element}
  */
 

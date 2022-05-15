@@ -3,21 +3,23 @@ import "./SearchResults.module.scss";
 import { MainTitle, SecondaryText } from "../Typography/Typography";
 
 /**
- * @typedef PropType
+ * @typedef SearchResultsPropsType
  * @property {JSX.Element | string} children
+ * @property {string} count
+ * @property {string} title
  */
 
 /**
  *
- * @param {PropType} props
+ * @param {SearchResultsPropsType} props
  * @returns {JSX.Element}
  */
-export const SearchResults = ({ children }) => {
+export const SearchResults = ({ count, title, children }) => {
   return (
     <div className="SearchResults">
       <div className="SearchResultsHeader">
-        <MainTitle>Результаты поиска</MainTitle>
-        <SecondaryText>Найдено: 3</SecondaryText>
+        <MainTitle>{title}</MainTitle>
+        <SecondaryText>{count}</SecondaryText>
       </div>
       <div className="SearchResultsItems">{children}</div>
     </div>

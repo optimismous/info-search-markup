@@ -3,6 +3,12 @@
 
 .SearchResultsHeader {
   margin-bottom: 25px;
+  border-bottom: 1px solid #d5dadf;
+  padding-bottom: 15px;
+
+  & .MainTitle {
+    margin-bottom: 5px;
+  }
 }
 
 .SearchResultsItems {

@@ -1,10 +1,10 @@
 import React from "react";
-import "./Icon.module.css";
+import "./Icon.module.scss";
 
 /**
  * @typedef PropType
  * @property {React.CSSProperties} style
- * @property {'book' | 'door' | 'envelope' | 'person' | 'shield' | 'talk'} type
+ * @property {'book'|'door'|'envelope'|'person|'shield'|'talk'|'search'|'trash'|'bell'} type
  */
 
 /**
@@ -13,8 +13,6 @@ import "./Icon.module.css";
  * @returns {JSX.Element}
  */
 
-export const Icon = ({style = {}, type}) => {
-  return (
-    <span style={style} className={`Icon _${type}`}/>
-  );
+export const Icon = ({ style = {}, type }) => {
+  return <span style={style} className={`Icon _${type}`} />;
 };

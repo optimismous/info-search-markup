@@ -1,0 +1,72 @@
+.Icon {
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+.Icon._person {
+  background: url("./img/icon_person.png") no-repeat center center;
+
+  &._red {
+    background-image: url("./img/icon_person_red.png");
+  }
+}
+
+.Icon._book {
+  background: url("./img/icon_book.png") no-repeat center center;
+}
+
+.Icon._door {
+  background: url("./img/icon_door_red.png") no-repeat center center;
+
+  &._red {
+    background-image: url("./img/icon_door_red.png");
+  }
+}
+
+.Icon._envelope {
+  background: url("./img/icon_envelope.png") no-repeat center center;
+
+  &._red {
+    background-image: url("./img/icon_envelope_red.png");
+  }
+}
+
+.Icon._shield {
+  background: url("./img/icon_shield.png") no-repeat center center;
+
+  &._red {
+    background-image: url("./img/icon_shield_red.png");
+  }
+}
+
+.Icon._talk {
+  background: url("./img/icon_talk.png") no-repeat center center;
+
+  &._red {
+    background-image: url("./img/icon_talk.png");
+  }
+}
+
+.Icon._search {
+  background: url("./img/icon_search.png") no-repeat center center;
+
+  &._red {
+    background-image: url("./img/icon_search.png");
+  }
+}
+
+.Icon._bell {
+  background: url("./img/icon_bell_red.png") no-repeat center center;
+
+  &._red {
+    background-image: url("./img/icon_bell_red.png");
+  }
+}
+
+.Icon._trash {
+  background: url("./img/icon_trash.png") no-repeat center center;
+}

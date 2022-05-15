@@ -10,7 +10,7 @@ import { StyledLink } from "./components/ui/Typography/Typography";
 import { Search } from "./components/Search";
 import { Support } from "./components/Support";
 import { Users } from "./components/Users";
-import { WatchList } from "./components/WarchList";
+import { WatchList } from "./components/WatchList";
 
 const SbsDetailsElement = () => {
   const leftElement = (

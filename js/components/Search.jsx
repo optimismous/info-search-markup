@@ -71,7 +71,7 @@ export const Search = (props) => {
           <Button type="submit">найти</Button>
         </footer>
       </form>
-      <SearchResults>
+      <SearchResults title="Результаты поиска" count="Найдено: 3">
         <>
           {[1, 2, 3, 4, 5, 6].map(() => (
             <ResultBox>
