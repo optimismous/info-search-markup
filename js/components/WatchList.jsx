@@ -1,6 +1,5 @@
 import React from "react";
 import { FieldValueText } from "./ui/Typography/Typography";
-import { ResultBox } from "./ui/ResultBox/ResultBox";
 import "./WatchList.module.scss";
 import { SearchResults } from "./ui/SearchResults/SearchResults";
 import { Icon } from "./ui/Icons/Icon";
@@ -19,20 +18,56 @@ export const WatchList = (props) => {
   return (
     <div>
       <SearchResults count="Организаций добавлено: 2" title="Сторожевой лист">
-        <ResultBox>
-          <FieldValueText field="" value="Грибанов Алексей Александрович" />
-          <FieldValueText
-            field="Дата внесения: "
-            value="01.01.1952, 20:12:10"
-          />
-          <FieldValueText field="Зафиксировано запросов: " value="1" />
-          <div className="ResultBoxActions">
-            <span className="StyledLink _blue">
-              <Icon type="trash" />
-              Убрать из листа
-            </span>
+        <div className="WatchListItem">
+          <div className="WatchListItemInner">
+            <div className="WatchListItemBody">
+              <FieldValueText field="" value="Грибанов Алексей Александрович" />
+              <FieldValueText
+                field="Дата внесения: "
+                value="01.01.1952, 20:12:10"
+              />
+              <FieldValueText field="Зафиксировано запросов: " value="1" />
+            </div>
+            <div className="WatchListItemFooter">
+              <span className="StyledLink _blue">
+                <Icon style={{ marginRight: 8 }} type="trash" />
+                Убрать из листа
+              </span>
+              <span className="WatchListItemBell">
+                <Icon type="bell" modifier="_red" />
+                <span className="WatchListItemBellCount">1</span>
+              </span>
+            </div>
           </div>
-        </ResultBox>
+          <div className="WatchListItemNotification">
+            <div className="WatchListItemNotificationMessage">
+              Изменился адрес жительства
+            </div>
+            <Icon type="close" />
+          </div>
+        </div>
+        <div className="WatchListItem">
+          <div className="WatchListItemInner">
+            <div className="WatchListItemBody">
+              <FieldValueText field="" value="Грибанов Алексей Александрович" />
+              <FieldValueText
+                field="Дата внесения: "
+                value="01.01.1952, 20:12:10"
+              />
+              <FieldValueText field="Зафиксировано запросов: " value="1" />
+            </div>
+            <div className="WatchListItemFooter">
+              <span className="StyledLink _blue">
+                <Icon style={{ marginRight: 8 }} type="trash" />
+                Убрать из листа
+              </span>
+              <span className="WatchListItemBell">
+                <Icon type="bell" modifier="_red" />
+                <span className="WatchListItemBellCount">1</span>
+              </span>
+            </div>
+          </div>
+        </div>
       </SearchResults>
     </div>
   );
