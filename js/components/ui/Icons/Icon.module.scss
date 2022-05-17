@@ -10,6 +10,7 @@
 .Icon._person {
   background: url("./img/icon_person.png") no-repeat center center;
 
+  ._selected &,
   &._red {
     background-image: url("./img/icon_person_red.png");
   }
@@ -17,11 +18,17 @@
 
 .Icon._book {
   background: url("./img/icon_book.png") no-repeat center center;
+
+  ._selected &,
+  &._red {
+    //background-image: url("./img/icon_book_red.png");
+  }
 }
 
 .Icon._door {
   background: url("./img/icon_door_red.png") no-repeat center center;
 
+  ._selected &,
   &._red {
     background-image: url("./img/icon_door_red.png");
   }
@@ -30,6 +37,7 @@
 .Icon._envelope {
   background: url("./img/icon_envelope.png") no-repeat center center;
 
+  ._selected &,
   &._red {
     background-image: url("./img/icon_envelope_red.png");
   }
@@ -38,6 +46,7 @@
 .Icon._shield {
   background: url("./img/icon_shield.png") no-repeat center center;
 
+  ._selected &,
   &._red {
     background-image: url("./img/icon_shield_red.png");
   }
@@ -46,16 +55,18 @@
 .Icon._talk {
   background: url("./img/icon_talk.png") no-repeat center center;
 
+  ._selected &,
   &._red {
-    background-image: url("./img/icon_talk.png");
+    //background-image: url("./img/icon_talk_red.png");
   }
 }
 
 .Icon._search {
   background: url("./img/icon_search.png") no-repeat center center;
 
+  ._selected &,
   &._red {
-    background-image: url("./img/icon_search.png");
+    background-image: url("./img/icon_search_red.png");
   }
 }
 
@@ -73,4 +84,8 @@
 
 .Icon._close {
   background: url("./img/icon_close.png") no-repeat center center;
+}
+
+.Icon._download {
+  background: url("./img/icon_download_red.png") no-repeat center center;
 }

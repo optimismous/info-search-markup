@@ -4,7 +4,7 @@ import "./Icon.module.scss";
 /**
  * @typedef PropType
  * @property {React.CSSProperties} style
- * @property {('book'|'door'|'envelope'|'person'|'shield'|'talk'|'search'|'trash'|'bell'|'close')} type
+ * @property {('book'|'door'|'envelope'|'person'|'shield'|'talk'|'search'|'trash'|'bell'|'close'|'download')} type
  * @property {string} modifier
  */
 

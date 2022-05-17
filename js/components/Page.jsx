@@ -8,7 +8,6 @@ const sidebarMenuItems = [
     icon: "search",
     text: "Поиск",
     route: "/search",
-    selected: true,
   },
   {
     icon: "person",

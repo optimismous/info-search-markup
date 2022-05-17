@@ -39,4 +39,7 @@
 
 .menuItemText {
   margin-left: 4px;
+  ._selected & {
+    color: red;
+  }
 }

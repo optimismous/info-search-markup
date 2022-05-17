@@ -11,6 +11,7 @@ import { Search } from "./components/Search";
 import { Support } from "./components/Support";
 import { Users } from "./components/Users";
 import { WatchList } from "./components/WatchList";
+import { Icon } from "./components/ui/Icons/Icon";
 
 const SbsDetailsElement = () => {
   const leftElement = (
@@ -22,6 +23,7 @@ const SbsDetailsElement = () => {
   const rightElement = (
     <a href="#" download="download">
       <StyledLink color="red" to="/">
+        <Icon type="download" style={{ marginRight: 8 }} />
         Выгрузить в PDF
       </StyledLink>
     </a>
