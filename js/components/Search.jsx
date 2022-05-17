@@ -19,7 +19,7 @@ const SearchByFioFields = () => {
         <Input placeholder="Фамилия" required={true} />
         <Input placeholder="Имя" required={true} />
         <Input placeholder="Отчество" required={true} />
-        <Input placeholder="Дата рождения" required={true} />
+        <Input placeholder="Дата рождения" type="date" required={true} />
       </fieldset>
       <fieldset className="FormFieldSet _wide">
         <textarea className="FormTextarea" placeholder="Причина запроса" />
@@ -73,8 +73,8 @@ export const Search = (props) => {
       </form>
       <SearchResults title="Результаты поиска" count="Найдено: 3">
         <>
-          {[1, 2, 3, 4, 5, 6].map(() => (
-            <ResultBox>
+          {[1, 2, 3, 4, 5, 6].map((item, idx) => (
+            <ResultBox key={`item-${idx}`}>
               <>
                 <FieldValueText
                   field="Организация: "
