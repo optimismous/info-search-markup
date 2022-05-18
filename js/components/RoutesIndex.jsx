@@ -18,13 +18,19 @@ export const RoutesIndex = (props) => {
         <Link to="/">Авторизация</Link>
       </div>
       <div>
-        <Link to="/private-cabinet">Личный кабинет</Link>
-      </div>
-      <div>
         <Link to="/search">Поиск</Link>
       </div>
       <div>
+        <Link to="/private-cabinet">Личный кабинет</Link>
+      </div>
+      <div>
         <Link to="/sbs-details">CБС подробнее</Link>
+      </div>
+      <div>
+        <Link to="/support">Написать в техподдержку</Link>
+      </div>
+      <div>
+        <Link to="/watch-list">Сторожевой лист</Link>
       </div>
     </nav>
   );
